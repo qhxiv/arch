@@ -1,0 +1,11 @@
+#!/bin/sh
+
+capacity=$(cat /sys/class/power_supply/BAT0/capacity)
+status=$(cat /sys/class/power_supply/BAT0/status)
+icon=󰂄
+
+if [[ $status = "Discharging" ]]; then
+	icon=󰁹
+fi
+
+echo "$icon $capacity%"
