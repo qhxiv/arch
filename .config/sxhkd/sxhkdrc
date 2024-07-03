@@ -3,7 +3,7 @@ XF86Audio{RaiseVolume,LowerVolume,Mute}
 	amixer set Master {5%+,5%-,toggle} > /dev/null;	\
 	kill -36 $(pidof dwmblocks)
 
-#  rightness
+# brightness
 XF86MonBrightness{Up,Down}
 	brightnessctl s {+10%,10%-} > /dev/null
 
