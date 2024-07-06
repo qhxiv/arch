@@ -7,4 +7,4 @@ if [[ $currentEngine = "Bamboo" ]]; then
 	language="VN"
 fi
 
-echo $language
+echo "$language"

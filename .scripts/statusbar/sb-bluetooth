@@ -5,11 +5,13 @@ uuid=$(bluetoothctl list | awk '/default/ { print $2 }')
 status=$(bluetoothctl show $uuid | awk '/PowerState/ { print $2 }')
 
 if [[ $status = off ]]; then
-	echo 󰂲
+	icon=󰂲
 else
 	if [[ $(bluetoothctl devices Connected | head -n 1 | wc -w) = 0 ]]; then
-		echo 󰂯
+		icon=󰂯
 	else
-		echo 󰂱
+		icon=󰂱
 	fi
 fi
+
+echo "$icon"

@@ -4,6 +4,7 @@ shopt -s autocd # Allow you to cd into directory merely by typing the directory 
 
 alias ls='ls -hNA --color=auto --group-directories-first'
 alias ll='ls -lhNA --color=auto --group-directories-first'
+alias rm='rm -i'
 alias grep='grep --color=auto'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias ws='cd /mnt/data/Documents/Workspace'
@@ -16,7 +17,8 @@ alias re='reboot'
 alias weather='curl wttr.in'
 
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)';
-PS1='\[\e[1m\]\w\[\e[0m\] \[\e[1m\]${PS1_CMD1}\[\e[0m\]> '
+# PS1='\[\e[1m\]\u@\w\[\e[0m\] \[\e[1m\]${PS1_CMD1}\[\e[0m\]> '
+PS1="\[\e[38;5;243m\]\u\[\e[38;5;245m\]@\[\e[38;5;249m\]\h \[\e[38;5;254m\]\w \[\033[0m\]$ "
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

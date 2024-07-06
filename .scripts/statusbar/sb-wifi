@@ -1,8 +1,9 @@
 #!/bin/sh
 
 if [[ $(nmcli general | awk '{print$1}' | tail -n 1) = disconnected ]]; then
-	echo 󰖪
+	icon=󰖪
 else
-	echo 󰖩
+	icon=󰖩
 fi
 
+echo "$icon"
