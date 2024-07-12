@@ -1,0 +1,10 @@
+#!/bin/sh
+
+currentEngine=$(ibus engine)
+language="EN"
+
+if [[ $currentEngine = "Bamboo" ]]; then
+	language="VN"
+fi
+
+echo "$language"

@@ -1,4 +1,0 @@
-#!/bin/bash
-
-wallpaper=$(ls ~/Pictures/wallpapers | dmenu -i)
-[ $wallpaper -z ] || feh --bg-fill $HOME/Pictures/wallpapers/$wallpaper

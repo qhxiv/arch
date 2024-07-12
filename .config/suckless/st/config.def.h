@@ -93,31 +93,35 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* bg opacity */
+float alpha = 0.75;
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
   /* 8 normal colors */
-  [0] = "#101010", /* black   */
-  [1] = "#c01c28", /* red     */
-  [2] = "#26a269", /* green   */
-  [3] = "#a2734c", /* yellow  */
-  [4] = "#12488b", /* blue    */
-  [5] = "#a347ba", /* magenta */
-  [6] = "#2aa1b3", /* cyan    */
-  [7] = "#b9b9b9", /* white   */
+  "#090618",
+  "#c34043",
+  "#76946a",
+  "#c0a36e",
+  "#7e9cd8",
+  "#957fb8",
+  "#6a9589",
+  "#c8c093",
 
   /* 8 bright colors */
-  [8]  = "#525252", /* black   */
-  [9]  = "#f66151", /* red     */
-  [10] = "#33d17a", /* green   */
-  [11] = "#e9ad0c", /* yellow  */
-  [12] = "#2a7bde", /* blue    */
-  [13] = "#c061cb", /* magenta */
-  [14] = "#33c7de", /* cyan    */
-  [15] = "#f7f7f7", /* white   */
+  "#727169",
+  "#e82424",
+  "#98bb6c",
+  "#e6c384",
+  "#7fb4ca",
+  "#938aa9",
+  "#7aa89f",
+  "#dcd7ba",
 
-  /* special colors */
-  [256] = "#101010", /* background */
-  [257] = "#b9b9b9", /* foreground */
+  [255] = 0,
+
+  /* more colors can be added after 255 to use with DefaultXX */
+  [256] = "#1f1f28", // background
 };
 
 
@@ -125,18 +129,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
 unsigned int defaultbg = 256;
-unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
-
-/*
- * Colors used, when the specific fg == defaultfg. So in reverse mode this
- * will reverse too. Another logic would only make the simple feature too
- * complex.
- */
-static unsigned int defaultitalic = 7;
-static unsigned int defaultunderline = 7;
+unsigned int defaultfg = 15;
+unsigned int defaultcs = 15;
+unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -180,8 +176,8 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 3},		0, /* !alt */ -1 },
-	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 3},		0, /* !alt */ -1 },
+	{ XK_ANY_MOD,           Button4, kscrollup,      {.i = 5} },
+	{ XK_ANY_MOD,           Button5, kscrolldown,    {.i = 5} },
 	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },

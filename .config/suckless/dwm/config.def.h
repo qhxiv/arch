@@ -3,29 +3,30 @@
 /* constants */
 #define TERMINAL "st"
 #define TERMCLASS "st"
-#define BROWSER "brave"
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
-static const unsigned int gappx     = 0;        /* gaps between windows */
+static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int gappx     = 8;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const unsigned int systraypinning = 0;   /* 0: sloppy systray follows selected monitor, >0: pin systray to monitor X */
-static const unsigned int systrayonleft  = 0;   /* 0: systray in the right corner, >0: systray on left of status text */
-static const unsigned int systrayspacing = 2;   /* systray spacing */
-static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display systray on the first monitor, False: display systray on the last monitor*/
-static const int showsystray             = 1;   /* 0 means no systray */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "monospace:size=9.5" };
+static const char *fonts[]          = {  "sans-serif:size=10", "RobotoMono Nerd Font Propo:size=9.5" };
 static const char dmenufont[]       = "sans-serif:size=10";
-static const char col_dark[]   = "#101010";
-static const char col_medium[] = "#525252";
-static const char col_light[]  = "#b9b9b9";
+static const char col_dark[]   = "#1f1f28";
+static const char col_medium[] = "#727169";
+static const char col_light[]  = "#dcd7ba";
+static const unsigned int baralpha = 0x99;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3] = {
 	/*               fg         bg          border   */
 	[SchemeNorm] = { col_light, col_dark,   col_medium },
 	[SchemeSel]  = { col_dark,  col_light,  col_light },
+};
+static const unsigned int alphas[][3]      = {
+    /*               fg      bg        border*/
+    [SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
@@ -75,33 +76,41 @@ static const char *termcmd[]  = { "st", NULL };
 #include "movestack.c"
 static const Key keys[] = {
 	/* modifier                     key              function        argument */
-	{ MODKEY|ShiftMask,             XK_l,            spawn,          {.v = (const char*[]){ "slock", NULL } } },
+	{ MODKEY,                       XK_c,            spawn,          {.v = (const char*[]){ "code", NULL } } },
 	{ MODKEY,                       XK_d,            spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } },
 	{ MODKEY,                       XK_f,            spawn,          {.v = (const char*[]){ "thunar", NULL } } },
-	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ BROWSER, NULL } } },
+	{ MODKEY,                       XK_s,            spawn,          {.v = (const char*[]){ "slock", NULL } } },
+	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ "brave", NULL } } },
+	{ MODKEY|ShiftMask,             XK_w,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "nmtui", NULL } } },
+	{ MODKEY|ShiftMask,             XK_b,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "bluetui", NULL } } },
+	{ MODKEY,                       XK_a,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "ani-cli", NULL } } },
 	{ MODKEY,                       XK_Return,       spawn,          {.v = (const char*[]){ TERMINAL, NULL } } },
-	{ MODKEY,                       XK_b,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "bluetui", NULL } } },
-	{ MODKEY,                       XK_m,            spawn,          {.v = (const char*[]){ TERMINAL, "-c", "cmus", "-e", "cmus", NULL } } },
+
+	{ MODKEY,                       XK_m,            spawn,          SHCMD(TERMINAL " -c cmus -e cmus; kill -37 $(pidof dwmblocks)") },
+	{ MODKEY,                       XK_bracketright, spawn,          SHCMD("cmus-remote --next; kill -37 $(pidof dwmblocks)") },
+	{ MODKEY,                       XK_bracketleft,  spawn,          SHCMD("cmus-remote --prev; kill -37 $(pidof dwmblocks)") },
+	{ MODKEY,                       XK_Left,         spawn,          {.v = (const char*[]){ "cmus-remote", "--seek", "-5", NULL } } },
+	{ MODKEY|ShiftMask,             XK_Left,         spawn,          {.v = (const char*[]){ "cmus-remote", "--seek", "-30", NULL } } },
+	{ MODKEY,                       XK_Right,        spawn,          {.v = (const char*[]){ "cmus-remote", "--seek", "+5", NULL } } },
+	{ MODKEY|ShiftMask,             XK_Right,        spawn,          {.v = (const char*[]){ "cmus-remote", "--seek", "+30", NULL } } },
 	{ MODKEY,                       XK_p,            spawn,          {.v = (const char*[]){ "cmus-remote", "--pause", NULL } } },
-	{ MODKEY,                       XK_bracketright, spawn,          {.v = (const char*[]){ "cmus-remote", "--next", NULL } } },
-	{ MODKEY,                       XK_bracketleft,  spawn,          {.v = (const char*[]){ "cmus-remote", "--prev", NULL } } },
 	{ MODKEY,                       XK_minus,        spawn,          {.v = (const char*[]){ "cmus-remote", "--volume", "-10%", NULL } } },
 	{ MODKEY,                       XK_equal,        spawn,          {.v = (const char*[]){ "cmus-remote", "--volume", "+10%", NULL } } },
-	{ MODKEY|ShiftMask,             XK_b,            togglebar,      {0} },
+
+	{ MODKEY,                       XK_b,            togglebar,      {0} },
 	{ MODKEY,                       XK_j,            focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,            focusstack,     {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_i,            incnmaster,     {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_d,            incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,            setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,            setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_j,            movestack,      {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_k,            movestack,      {.i = -1 } },
  	{ MODKEY,                       XK_Tab,          view,           {0} },
 	{ MODKEY|ShiftMask,             XK_Return,       zoom,           {0} },
-	{ MODKEY,                       XK_c,            killclient,     {0} },
-	{ MODKEY|ShiftMask,             XK_t,            setlayout,      {.v = &layouts[0]} },
-	{ MODKEY|ShiftMask,             XK_f,            setlayout,      {.v = &layouts[1]} },
-	{ MODKEY|ShiftMask,             XK_m,            setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,             XK_i,            incnmaster,     {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_d,            incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_t,            setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_y,            setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_u,            setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,        setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,        togglefloating, {0} },
 	{ MODKEY,                       XK_0,            view,           {.ui = ~0 } },
@@ -119,6 +128,7 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                            6)
 	TAGKEYS(                        XK_8,                            7)
 	TAGKEYS(                        XK_9,                            8)
+	{ MODKEY,                       XK_q,            killclient,     {0} },
 	{ MODKEY|ShiftMask,             XK_q,            quit,           {0} },
 };
 
@@ -128,7 +138,6 @@ static const Button buttons[] = {
 	/* click                event mask      button          function        argument */
 	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
 	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
-	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
 	{ ClkClientWin,         MODKEY,         Button1,        movemouse,      {0} },
 	{ ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },

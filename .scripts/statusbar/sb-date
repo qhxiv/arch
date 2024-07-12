@@ -1,2 +1,0 @@
-#!/bin/sh
-date +'%A, %d %B %+4Y'
