@@ -1,6 +1,6 @@
 [window]
 padding = { x = 4, y = 4 }
-opacity = 0.75
+opacity = 0.7
 
 [cursor]
 thickness = 0.3
@@ -8,41 +8,42 @@ thickness = 0.3
 [font]
 size = 9
 
-# Colors (Kanagawa Wave)
-# Source https//github.com/rebelot/kanagawa.nvim
-
 [colors.primary]
-background = '#1f1f28'
-foreground = '#dcd7ba'
+background = '#191724'
+foreground = '#e0def4'
 
-[colors.normal]
-black   = '#090618'
-red     = '#c34043'
-green   = '#76946a'
-yellow  = '#c0a36e'
-blue    = '#7e9cd8'
-magenta = '#957fb8'
-cyan    = '#6a9589'
-white   = '#c8c093'
+[colors.cursor]
+text = '#e0def4'
+cursor = '#524f67'
 
-[colors.bright]
-black   = '#727169'
-red     = '#e82424'
-green   = '#98bb6c'
-yellow  = '#e6c384'
-blue    = '#7fb4ca'
-magenta = '#938aa9'
-cyan    = '#7aa89f'
-white   = '#dcd7ba'
+[colors.vi_mode_cursor]
+text = '#e0def4'
+cursor = '#524f67'
 
 [colors.selection]
-background = '#2d4f67'
-foreground = '#c8c093'
+text = '#e0def4'
+background = '#403d52'
 
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa066'
+[colors.normal]
+black = '#26233a'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
 
-[[colors.indexed_colors]]
-index = 17
-color = '#ff5d62'
+[colors.bright]
+black = '#6e6a86'
+red = '#eb6f92'
+green = '#31748f'
+yellow = '#f6c177'
+blue = '#9ccfd8'
+magenta = '#c4a7e7'
+cyan = '#ebbcba'
+white = '#e0def4'
+
+[colors.hints]
+start = {foreground = '#908caa', background = '#1f1d2e' }
+end = { foreground = '#6e6a86', background = '#1f1d2e' }

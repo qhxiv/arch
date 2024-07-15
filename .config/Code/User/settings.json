@@ -1,9 +1,12 @@
 {
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Hack",
+  "editor.fontFamily": "Roboto Mono",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -14,6 +17,7 @@
     "javascript": "javascriptreact",
     "typescript": "typescriptreact"
   },
+  "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.ignoreRecommendations": true,
   "git.openRepositoryInParentFolders": "never",
@@ -21,9 +25,10 @@
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontSize": 13,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "auto",
+  "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
@@ -35,6 +40,10 @@
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
+    // keep the cursor at the middle of the screen while moving using ctrl + d, u
+    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
+    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
+
     // buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -99,5 +108,10 @@
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
-  ]
+  ],
+
+  // To improve performance
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
 }
