@@ -5,8 +5,8 @@
 #define TERMCLASS "Alacritty"
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
-static const unsigned int gappx     = 8;        /* gaps between windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int gappx     = 0;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
@@ -16,14 +16,14 @@ static const char *splitdelim        = ";";       /* Character used for separati
 static const char *fonts[]          = { "monospace:size=9.5" };
 static const char dmenufont[]       = "sans-serif:size=10";
 
-static char normfgcolor[]           = "#e0def4";
-static char normbgcolor[]           = "#191724";
-static char normbordercolor[]       = "#908caa";
-static char selfgcolor[]            = "#e0def4";
-static char selbgcolor[]            = "#403d52";
-static char selbordercolor[]        = "#e0def4";
+static char normfgcolor[]           = "#dcd7ba";
+static char normbgcolor[]           = "#1f1f28";
+static char normbordercolor[]       = "#2d4f67";
+static char selfgcolor[]            = "#1f1f28";
+static char selbgcolor[]            = "#dcd7ba";
+static char selbordercolor[]        = "#dcd7ba";
 
-static const unsigned int baralpha = 0x99;
+static const unsigned int baralpha = 0xb2;
 static const unsigned int borderalpha = OPAQUE;
 
 static const char *colors[][3] = {
