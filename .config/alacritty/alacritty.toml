@@ -1,6 +1,5 @@
 [window]
 padding = { x = 4, y = 4 }
-#opacity = 0.7
 
 [cursor]
 thickness = 0.3

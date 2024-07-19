@@ -1,10 +1,17 @@
 {
+  "[html]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[css]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[javascriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[jsonc]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": { "source.organizeImports": "always" },
   "editor.cursorBlinking": "solid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "Roboto Mono",
+  "editor.fontFamily": "JetBrains Mono",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -22,10 +29,10 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.fontSize": 13,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
-  "window.commandCenter": false,
   "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.location": "top",
@@ -33,7 +40,26 @@
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
 
-  "vim.leader": "<Space>",
+  "apc.font.family": "JetBrainsMono Nerd Font",
+
+  "workbench.preferredDarkColorTheme": "Kanagawa",
+  "workbench.colorCustomizations": {
+    "[Kanagawa]": {
+      "editorCursor.background": "#1f1f28",
+      "editorGroupHeader.tabsBackground": "#1f1f28",
+      "editorStickyScroll.border": "#2d4f67",
+      "editorStickyScroll.shadow": "#1f1f28",
+      "scrollbar.shadow": "#1f1f28",
+      "sideBar.border": "#2d4f67",
+      "statusBarItem.remoteBackground": "#16161d",
+      "tab.border": "#1f1f28",
+      "widget.border": "#2d4f67",
+      "widget.shadow": "#1f1f28"
+    }
+  },
+
+  "vim.leader": " ",
+  "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
@@ -63,14 +89,18 @@
       "commands": ["workbench.action.focusRightGroup"]
     },
 
-    // NICE TO HAVE
-    // Turn off search highlight
+    // Turn off search highlighting
     { "before": ["<C-n>"], "commands": [":nohl"] },
+
+    // Move cursor to the first and last character in the line
+    { "before": ["leader", "h"], "after": ["^"] },
+    { "before": ["leader", "l"], "after": ["$"] },
 
     // Keep the cursor at the middle of the screen while moving using ctrl + d, u
     { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
     { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
 
+    // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
@@ -113,6 +143,5 @@
   // Improve performance
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  },
-  "workbench.preferredDarkColorTheme": "Kanagawa"
+  }
 }

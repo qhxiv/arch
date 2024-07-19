@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# picom &
 sxhkd &
 ~/.fehbg &
 dwmblocks &

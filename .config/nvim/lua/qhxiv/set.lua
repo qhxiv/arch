@@ -2,7 +2,7 @@
 --  Remove this option if you want your OS clipboard to remain independent.
 --  See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
-vim.opt.cursorline = false
+vim.opt.cursorline = true
 
 vim.opt.number = true
 vim.opt.relativenumber = true

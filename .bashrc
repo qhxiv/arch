@@ -23,8 +23,9 @@ alias weather='curl wttr.in'
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
 
-PS1='\[\e[96;1m\]\u\[\e[92m\]@\[\e[93m\]\h\[\e[0m\] \[\e[37;1m\]\W\[\e[0m\] \[\e[1m\]\\$\[\e[0m\] '
+PS1='\[\e[96;1m\]\u\[\e[92m\]@\[\e[93m\]\h\[\e[0m\] \[\e[37;1m\]\w\[\e[0m\]\n\[\e[1m\]>\[\e[0m\] '
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+

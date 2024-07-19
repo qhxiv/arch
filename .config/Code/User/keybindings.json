@@ -36,12 +36,12 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "n",
+    "key": "a",
     "command": "explorer.newFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
   },
   {
-    "key": "shift+n",
+    "key": "shift+a",
     "command": "explorer.newFolder",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
   },
