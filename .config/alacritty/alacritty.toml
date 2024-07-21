@@ -7,41 +7,47 @@ thickness = 0.3
 [font]
 size = 9
 
-# Colors (Kanagawa Wave)
-# Source https//github.com/rebelot/kanagawa.nvim
+# Color theme ported from Konsole Linux colors
 
 [colors.primary]
-background = '#1f1f28'
-foreground = '#dcd7ba'
+foreground = '#e3e3e3'
+bright_foreground = '#ffffff'
+background = '#1f1f1f'
+
+[colors.cursor]
+text = '#191622'
+cursor = '#f8f8f2'
+
+[colors.search]
+matches = { foreground = '#b2b2b2', background = '#b26818' }
+focused_match = { foreground = "CellBackground", background = "CellForeground" }
 
 [colors.normal]
-black   = '#090618'
-red     = '#c34043'
-green   = '#76946a'
-yellow  = '#c0a36e'
-blue    = '#7e9cd8'
-magenta = '#957fb8'
-cyan    = '#6a9589'
-white   = '#c8c093'
+black   = '#000000'
+red     = '#b21818'
+green   = '#18b218'
+yellow  = '#b26818'
+blue    = '#1818b2'
+magenta = '#b218b2'
+cyan    = '#18b2b2'
+white   = '#b2b2b2'
 
 [colors.bright]
-black   = '#727169'
-red     = '#e82424'
-green   = '#98bb6c'
-yellow  = '#e6c384'
-blue    = '#7fb4ca'
-magenta = '#938aa9'
-cyan    = '#7aa89f'
-white   = '#dcd7ba'
+black   = '#686868'
+red     = '#ff5454'
+green   = '#54ff54'
+yellow  = '#ffff54'
+blue    = '#5454ff'
+magenta = '#ff54ff'
+cyan    = '#54ffff'
+white   = '#ffffff'
 
-[colors.selection]
-background = '#2d4f67'
-foreground = '#c8c093'
-
-[[colors.indexed_colors]]
-index = 16
-color = '#ffa066'
-
-[[colors.indexed_colors]]
-index = 17
-color = '#ff5d62'
+[colors.dim]
+black   = '#000000'
+red     = '#b21818'
+green   = '#18b218'
+yellow  = '#b26818'
+blue    = '#1818b2'
+magenta = '#b218b2'
+cyan    = '#18b2b2'
+white   = '#b2b2b2'

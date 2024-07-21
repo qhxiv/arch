@@ -1,0 +1,7 @@
+ani-cli
+auto-cpufreq
+bluetui-bin
+brave-bin
+ibus-bamboo
+selectdefaultapplication-git
+visual-studio-code-bin
