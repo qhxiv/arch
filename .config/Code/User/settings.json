@@ -29,7 +29,7 @@
     "source.organizeImports": "always"
   },
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "Source Code Pro",
+  "editor.fontFamily": "RobotoMono Nerd Font Propo",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -97,10 +97,6 @@
     { "before": ["leader", "h"], "after": ["^"] },
     { "before": ["leader", "l"], "after": ["$"] },
 
-    // Keep the cursor at the middle of the screen while moving using ctrl + d, u
-    { "before": ["<C-d>"], "after": ["<C-d>", "z", "z"] },
-    { "before": ["<C-u>"], "after": ["<C-u>", "z", "z"] },
-
     // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
@@ -118,7 +114,7 @@
       "commands": ["editor.action.quickFix"]
     },
     {
-      "before": ["leader", "s", "f"],
+      "before": ["leader", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
     {
@@ -128,10 +124,6 @@
     {
       "before": ["leader", "p"],
       "commands": ["editor.action.formatDocument"]
-    },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -144,5 +136,7 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "workbench.preferredLightColorTheme": "Default Dark Modern"
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  }
 }

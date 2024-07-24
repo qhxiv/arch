@@ -1,2 +1,4 @@
-require("qhxiv.remap")
-require("qhxiv.set")
+require("qhxiv.options")
+require("qhxiv.keymaps")
+require("qhxiv.autocmds")
+require("qhxiv.lazy")
