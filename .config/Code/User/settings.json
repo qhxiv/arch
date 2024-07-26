@@ -23,13 +23,12 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "RobotoMono Nerd Font Propo",
+  "editor.fontFamily": "RobotoMono Nerd Font",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -46,6 +45,7 @@
   "git.openRepositoryInParentFolders": "never",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "telemetry.telemetryLevel": "off",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "on",
@@ -57,7 +57,6 @@
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "telemetry.telemetryLevel": "off",
 
   "vim.leader": " ",
   "vim.useSystemClipboard": true,
@@ -138,5 +137,7 @@
   ],
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  }
+  },
+  "breadcrumbs.enabled": false,
+  "workbench.preferredLightColorTheme": "Default Dark Modern"
 }

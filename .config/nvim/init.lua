@@ -1,1 +1,2 @@
-require("qhxiv")
+require("qhxiv.core")
+require("qhxiv.lazy")

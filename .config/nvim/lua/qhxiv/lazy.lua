@@ -15,8 +15,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  spec = {
-    { import = "plugins" },
-  },
+  spec = { { import = "qhxiv/plugins" } },
   checker = { enabled = true },
+  change_detection = { notify = false },
 })
