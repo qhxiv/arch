@@ -12,12 +12,12 @@ Print
 	flameshot gui > /dev/null
 
 # restart sxhkd and dwmblocks
-super + Escape
+alt + Escape
 	pkill sxhkd; sxhkd; \
 	pkill dwmblocks; dwmblocks
 
 # change input method
-super + i
+alt + i
 	engine=$(ibus engine); \
 	[[ $engine = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo; \
 	kill -35 $(pidof dwmblocks)

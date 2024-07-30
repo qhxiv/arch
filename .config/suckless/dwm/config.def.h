@@ -51,7 +51,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY Mod1Mask
 #define TAGKEYS(KEY,TAG) \
 	{ MODKEY,                       KEY,      view,           {.ui = 1 << TAG} }, \
 	{ MODKEY|ControlMask,           KEY,      toggleview,     {.ui = 1 << TAG} }, \
@@ -63,13 +63,12 @@ static const Layout layouts[] = {
 
 #include "movestack.c"
 static const Key keys[] = {
-
 	/* modifier                     key              function        argument */
 	{ MODKEY,                       XK_c,            spawn,          {.v = (const char*[]){ "code", NULL } } },
 	{ MODKEY,                       XK_d,            spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } },
 	{ MODKEY,                       XK_f,            spawn,          {.v = (const char*[]){ "thunar", NULL } } },
 	{ MODKEY,                       XK_s,            spawn,          {.v = (const char*[]){ "slock", NULL } } },
-	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ "brave", NULL } } },
+	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ "firefox", NULL } } },
 	{ MODKEY|ShiftMask,             XK_w,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "nmtui", NULL } } },
 	{ MODKEY|ShiftMask,             XK_b,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "bluetui", NULL } } },
 	{ MODKEY,                       XK_a,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "ani-cli", NULL } } },

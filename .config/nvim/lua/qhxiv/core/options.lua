@@ -13,6 +13,7 @@ opt.expandtab = true
 opt.autoindent = true
 opt.smartindent = true
 
+opt.mouse = a
 opt.wrap = false
 
 opt.swapfile = false
@@ -32,3 +33,5 @@ opt.updatetime = 50
 
 opt.list = true
 opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.cmd.colorscheme "habamax"

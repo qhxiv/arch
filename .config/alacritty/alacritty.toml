@@ -5,7 +5,6 @@ padding = { x = 4, y = 4 }
 thickness = 0.3
 
 [font]
-normal = { family = "RobotoMono Nerd Font" }
 size = 9
 
 # Color theme ported from Konsole Linux colors
