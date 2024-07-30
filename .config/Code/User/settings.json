@@ -23,12 +23,13 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always"
   },
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "RobotoMono Nerd Font",
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -51,7 +52,6 @@
   "terminal.integrated.gpuAcceleration": "on",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
-  "window.customTitleBarVisibility": "never",
   "window.menuBarVisibility": "toggle",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
@@ -138,6 +138,5 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
-  "breadcrumbs.enabled": false,
   "workbench.preferredLightColorTheme": "Default Dark Modern"
 }

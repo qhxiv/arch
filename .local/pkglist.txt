@@ -6,7 +6,9 @@ base
 base-devel
 bluetui-bin
 bluez-utils
+brave-bin
 brightnessctl
+bt-dualboot
 cmus
 efibootmgr
 feh
@@ -33,9 +35,9 @@ picom
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-reflector
 selectdefaultapplication-git
 slock
+sof-firmware
 sxhkd
 thunar
 ttf-firacode-nerd
