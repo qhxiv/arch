@@ -4,5 +4,5 @@ picom &
 sxhkd &
 dwmblocks &
 ibus-daemon -rxRd &
-nitrogen --restore &
+~/.fehbg &
 exec dwm

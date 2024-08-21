@@ -29,7 +29,7 @@
     "source.organizeImports": "always"
   },
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontFamily": "Cascadia Mono",
   "editor.fontSize": 13,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
@@ -46,13 +46,12 @@
   "git.openRepositoryInParentFolders": "never",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
-  "telemetry.telemetryLevel": "off",
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "on",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.autoDetectColorScheme": true,
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "hidden",
   "workbench.activityBar.location": "top",
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
@@ -137,6 +136,5 @@
   ],
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
-  },
-  "workbench.preferredLightColorTheme": "Default Dark Modern"
+  }
 }

@@ -14,7 +14,6 @@ alias ms='cd /mnt/data/Music'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias glog='git log --graph --oneline --decorate'
 alias ytdl='yt-dlp -o "%(title)s.%(ext)s"'
-alias nl='redshift -PO 3000'
 
 alias sd='shutdown now'
 alias re='reboot'

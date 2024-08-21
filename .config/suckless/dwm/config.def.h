@@ -13,13 +13,13 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "sans-serif:pixelsize=13" };
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#e3e3e3";
-static const char col_gray4[]       = "#ffffff";
+static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+  /*               fg         bg         border   */
+  [SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+  [SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 };
 
 /* tagging */
@@ -67,8 +67,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_c,            spawn,          {.v = (const char*[]){ "code", NULL } } },
 	{ MODKEY,                       XK_d,            spawn,          {.v = (const char*[]){ "dmenu_run", NULL } } },
 	{ MODKEY,                       XK_f,            spawn,          {.v = (const char*[]){ "thunar", NULL } } },
-	{ MODKEY,                       XK_s,            spawn,          {.v = (const char*[]){ "slock", NULL } } },
-	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ "brave", NULL } } },
+	{ MODKEY,                       XK_s,            spawn,          {.v = (const char*[]){ "powermenu", NULL } } },
+	{ MODKEY,                       XK_w,            spawn,          {.v = (const char*[]){ "firefox", NULL } } },
 	{ MODKEY|ShiftMask,             XK_w,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "nmtui", NULL } } },
 	{ MODKEY|ShiftMask,             XK_b,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "bluetui", NULL } } },
 	{ MODKEY,                       XK_a,            spawn,          {.v = (const char*[]){ TERMINAL, "-e", "ani-cli", NULL } } },

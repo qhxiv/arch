@@ -1,0 +1,11 @@
+#!/bin/sh
+
+action=$(echo -e "Shutdown\nReboot\nLock" | dmenu -i)
+case $action in
+  "Shutdown")
+    shutdown now;;
+  "Reboot")
+    reboot;;
+  "Lock")
+    slock;;
+esac
