@@ -1,24 +1,18 @@
 #!/bin/sh
 
 # Controller
-uuid=$(bluetoothctl list | awk '/default/ { print $2 }')
 status=$(bluetoothctl show $uuid | awk '/PowerState/ { print $2 }')
 
 if [[ $status = off ]]; then
 	icon=󰂲
 else
-	# The first connected bluetooth device
-	device=$(bluetoothctl devices Connected | head -n 1)
-	uuid=$(echo $device | awk '{ print $2 }')
+	device=$(bluetoothctl devices Connected)
 
 	if [[ $(echo $device | wc -w) = 0 ]]; then
 		icon=󰂯
 	else
-		name=$(echo $device | cut -d' ' -f3-)
-		battery=$(bluetoothctl info $uuid | awk '/Battery/ { print $4 }')
-		detail=" $name ${battery::-1}%)"
 		icon=󰂱
 	fi
 fi
 
-echo "$icon$detail"
+echo "$icon"

@@ -33,5 +33,3 @@ opt.updatetime = 50
 
 opt.list = true
 opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
-vim.cmd.colorscheme("habamax")

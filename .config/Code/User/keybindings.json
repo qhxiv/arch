@@ -23,7 +23,7 @@
   },
   {
     "key": "ctrl+shift+j",
-    "command": "workbench.action.togglePanel"
+    "command": "workbench.action.terminal.toggleTerminal"
   },
   // FILE TREE
   {
@@ -65,11 +65,6 @@
     "command": "renameFile",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
-  // {
-  //   "key": "d",
-  //   "command": "moveFileToTrash",
-  //   "when": "explorerResourceMoveableToTrash && explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-  // },
   {
     "key": "d",
     "command": "deleteFile",
