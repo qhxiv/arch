@@ -11,7 +11,7 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.formatOnSave": true,
-  "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontFamily": "Cascadia Mono",
   "editor.fontSize": 13,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
