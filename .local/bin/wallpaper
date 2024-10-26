@@ -1,5 +1,6 @@
 #!/bin/sh
 
 path="/mnt/data/Pictures/wallpapers"
+
 filename=$(ls $path | dmenu -i -l 20)
 feh --bg-fill "$path/$filename"

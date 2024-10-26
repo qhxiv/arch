@@ -1,4 +1,5 @@
 #!/bin/sh
 
 sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d
+sudo mkdir /etc/systemd/system/getty@tty1.service.d
 sudo cp skip-username.conf /etc/systemd/system/getty@tty1.service.d

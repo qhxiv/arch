@@ -25,7 +25,8 @@
     "key": "ctrl+shift+j",
     "command": "workbench.action.terminal.toggleTerminal"
   },
-  // FILE TREE
+
+  // Explorer
   {
     "key": "ctrl+e",
     "command": "workbench.action.toggleSidebarVisibility"
@@ -78,6 +79,26 @@
   {
     "key": "s",
     "command": "explorer.openToSide",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "revealFileInOS",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "t",
+    "command": "openInIntegratedTerminal",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "u",
+    "command": "copyFilePath",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  },
+  {
+    "key": "i",
+    "command": "copyRelativeFilePath",
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   }
 ]
