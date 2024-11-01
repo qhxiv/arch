@@ -15,7 +15,7 @@ static const int showsystray        = 1;        /* 0 means no systray */
 static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "sans-serif:pixelsize=13" };
+static const char *fonts[]          = { "monospace:pixelsize=13.5" };
 static const char col_gray1[]       = "#111111";
 static const char col_gray2[]       = "#2c2c2c";
 static const char col_gray3[]       = "#bbbbbb";

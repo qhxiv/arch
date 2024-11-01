@@ -12,9 +12,7 @@
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrainsMono NF",
   "editor.fontSize": 13.5,
-  // "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -39,10 +37,10 @@
     "html": "html",
     "javascript": "javascript"
   },
+  "terminal.integrated.fontSize": 13.5,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.gpuAcceleration": "on",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.menuBarVisibility": "hidden",
   "workbench.activityBar.location": "top",
@@ -127,29 +125,5 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
   ],
-  "gitlens.launchpad.indicator.enabled": false,
-  "mssql.objectExplorer.groupBySchema": false,
-  "workbench.preferredLightColorTheme": "Kanagawa Dragon",
-  "nebulaOni.update.restoreConfiguration": {
-    "themeSettings": {
-      "background": "Grey",
-      "main": "Bumblebee",
-      "highlight": "Ultra Violet",
-      "focusBorder": "ON",
-      "fontStyle": "Italic",
-      "syntaxBrightness": "Normal",
-      "comments": "Dark Violet",
-      "favorite": "OFF"
-    },
-    "favoriteSettings": {
-      "background": "Glacial Blue",
-      "main": "Sakura",
-      "highlight": "Ultra Violet",
-      "focusBorder": "ON",
-      "fontStyle": "Italic",
-      "syntaxBrightness": "Dimmed",
-      "comments": "Dark Magenta",
-      "favorite": "Nebula Oni (Pegasus)"
-    }
-  }
+  "gitlens.launchpad.indicator.enabled": false
 }
