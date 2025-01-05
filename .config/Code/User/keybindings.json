@@ -1,13 +1,50 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-  // NAVIGATION
+  // Quick open
   {
-    "key": "ctrl+shift+a",
+    "key": "tab",
+    "command": "workbench.action.acceptSelectedQuickOpenItem",
+    "when": "inQuickInput"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+
+  // Side bar
+  {
+    "key": "ctrl+e",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "j",
+    "command": "list.focusAnyDown",
+    "when": "sideBarFocus && !inputFocus"
+  },
+  {
+    "key": "k",
+    "command": "list.focusAnyUp",
+    "when": "sideBarFocus && !inputFocus"
+  },
+
+  // Terminal
+  {
+    "key": "ctrl+shift+j",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+j",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+b",
+    "key": "ctrl+k",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
@@ -21,16 +58,8 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  {
-    "key": "ctrl+shift+j",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
 
-  // Explorer
-  {
-    "key": "ctrl+e",
-    "command": "workbench.action.toggleSidebarVisibility"
-  },
+  // FILE TREE
   {
     "key": "ctrl+e",
     "command": "workbench.files.action.focusFilesExplorer",

@@ -25,7 +25,6 @@ ibus
 ibus-bamboo-git
 intel-ucode
 iptables-nft
-libreoffice-still
 libx11
 libxft
 libxinerama
@@ -63,7 +62,6 @@ tree
 ttf-nerd-fonts-symbols
 unrar
 unzip
-virtualbox
 visual-studio-code-bin
 vlc
 xclip
