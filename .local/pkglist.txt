@@ -15,7 +15,6 @@ discord
 docker
 docker-compose
 efibootmgr
-feh
 firefox
 flameshot
 fzf
@@ -44,13 +43,10 @@ obs-studio
 openssh
 picom
 pinta
-postbird-bin
 postman-bin
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-python-pip
-python-pipx
 rnote
 selectdefaultapplication-git
 slock

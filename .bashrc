@@ -10,7 +10,6 @@ alias rm='rm -i'
 alias grep='grep --color=auto'
 
 alias ws='cd /mnt/data/Documents/Workspace'
-alias sc='cd /mnt/data/Documents/School/Năm\ 4\ Kì\ 1'
 alias ms='cd /mnt/data/Music'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
