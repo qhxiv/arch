@@ -1,0 +1,13 @@
+command=~/.local/bin/statusbar/$BLOCK_NAME
+interval=1
+
+[sb-volume]
+signal=2
+
+[sb-battery]
+
+[sb-bluetooth]
+
+[sb-wifi]
+
+[sb-time]

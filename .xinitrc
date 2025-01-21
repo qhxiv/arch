@@ -2,8 +2,9 @@
 
 picom &
 sxhkd &
-dwmblocks &
 ibus-daemon -rxRd &
-bluetoothctl power off
 ~/.fehbg &
-exec dwm
+
+# dwmblocks &
+# exec dwm
+exec i3

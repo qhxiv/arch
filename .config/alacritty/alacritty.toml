@@ -5,7 +5,10 @@ padding = { x = 4, y = 4 }
 thickness = 0.3
 
 [font]
-size = 9
+size = 9.5
 
-[colors.normal]
-blue = '#12488b'
+# [colors.normal]
+# blue = '#12488b'
+
+[colors.primary]
+background = '#000000'

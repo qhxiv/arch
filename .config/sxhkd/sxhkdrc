@@ -21,3 +21,21 @@ alt + i
 	engine=$(ibus engine); \
 	[[ $engine = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo; \
 	kill -35 $(pidof dwmblocks)
+
+alt + c
+  code
+
+alt + e
+  thunar
+
+alt + s
+  powermenu
+
+alt + w
+  brave
+
+alt + shift + b
+  $TERMINAL -e bluetui
+
+alt + shift + w
+  $TERMINAL -e nmtui

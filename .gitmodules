@@ -1,0 +1,3 @@
+[submodule "/home/qh/.config/nvim"]
+	path = /home/qh/.config/nvim
+	url = git@github.com:qhxiv/nvim-cfg.git
