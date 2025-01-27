@@ -10,14 +10,16 @@ bluez
 bluez-utils
 brave-bin
 brightnessctl
-calcurse
+btop
 cmus
 discord
+dmenu
 docker
 docker-compose
 dunst
 efibootmgr
 fd
+feh
 firefox
 flameshot
 fzf
@@ -30,6 +32,7 @@ i3status
 ibus
 ibus-bamboo-git
 intel-ucode
+iptables-nft
 keepassxc
 linux
 linux-firmware
@@ -66,7 +69,6 @@ unrar
 unzip
 visual-studio-code-bin
 vlc
-wezterm
 xclip
 xcolor
 xf86-input-libinput
@@ -76,5 +78,6 @@ xorg-xinit
 xorg-xinput
 xorg-xrandr
 yay
+yay-debug
 zathura
 zathura-pdf-mupdf
