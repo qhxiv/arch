@@ -1,15 +1,15 @@
 #!/bin/sh
 
 if [[ $(cmus-remote -Q | wc -l) = 0 ]]; then
-	echo 󰝛
+  echo 󰝛
 else
-	status=$(cmus-remote -Q | grep status | cut -d' ' -f2-)
-	if [[ $status = stopped ]]; then
-		echo 󰝚
-	else
-		name=$(cmus-remote -Q | grep file | cut -d/ -f6-)
-		name=${name%.*}
+  status=$(cmus-remote -Q | grep status | cut -d' ' -f2-)
+  if [[ $status = stopped ]]; then
+    echo 󰝚
+  else
+    name=$(cmus-remote -Q | grep file | cut -d/ -f6-)
+    name=${name%.*}
 
-		echo "󰝚 $name"
-	fi
+    echo "󰝚 $name"
+  fi
 fi

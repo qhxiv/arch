@@ -132,7 +132,7 @@
       "commands": ["workbench.action.findInFiles"]
     },
     {
-      "before": ["leader", "f", "d"],
+      "before": ["leader", "f", "m"],
       "commands": ["editor.action.formatDocument"]
     }
   ],
@@ -159,5 +159,5 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ],
+  ]
 }

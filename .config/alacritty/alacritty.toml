@@ -7,8 +7,8 @@ thickness = 0.3
 [font]
 size = 9.5
 
-[colors.normal]
-blue = '#12488b'
-
 [colors.primary]
-background = '#111111'
+background = '#181616'
+
+[colors.normal]
+blue = '#0F52BA'

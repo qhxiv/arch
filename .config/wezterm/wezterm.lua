@@ -16,6 +16,10 @@ config.window_padding = {
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 
+config.colors = {
+  background = "#111111",
+}
+
 config.font = wezterm.font("JetBrainsMonoNL NF")
 config.font_size = 9.5
 config.freetype_load_target = "HorizontalLcd"

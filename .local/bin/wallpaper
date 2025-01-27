@@ -1,6 +1,7 @@
 #!/bin/sh
 
-path="/mnt/d/Pictures/wallpapers"
+path="/mnt/d/Pictures/wallpapers/"
+spath=$(echo $path | sed 's/\//\\\//g')
 
-filename=$(ls $path | dmenu -i -l 20)
-feh --bg-fill "$path/$filename"
+filename=$(find $path -type f \( -iname '*.png' -o -iname '*.jpg' \) | sed "s/$spath//g" | dmenu -i -l 30)
+feh --bg-fill "$path$filename"

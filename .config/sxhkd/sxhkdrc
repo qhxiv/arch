@@ -1,8 +1,8 @@
 # volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
   amixer set Master {5%+,5%-,toggle} > /dev/null; \
+  pkill -RTMIN+2 dwmblocks; \
   pkill -SIGRTMIN+2 i3blocks
-  # kill -36 $(pidof dwmblocks)
 
 # brightness
 XF86MonBrightness{Up,Down}
@@ -19,9 +19,8 @@ alt + Escape
 
 # change input method
 alt + i
-  engine=$(ibus engine); \
-  [[ $engine = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo; \
-  kill -35 $(pidof dwmblocks)
+  [[ $(ibus engine) = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo; \
+  pkill -RTMIN+1 dwmblocks
 
 alt + c
   code

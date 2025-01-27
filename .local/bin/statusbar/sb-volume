@@ -5,7 +5,7 @@ status=$(amixer get Master | grep % | awk '{print $6}' | tail -n 1 | sed 's/[][]
 icon=
 
 if [ $status = "off" ]; then
-	icon=
+  icon=
 fi
 
 echo "$icon $volume"

@@ -5,6 +5,12 @@ sxhkd &
 ibus-daemon -rxRd &
 ~/.fehbg &
 
-# dwmblocks &
-# exec dwm
-exec i3
+case $1 in
+2)
+  exec i3
+  ;;
+*)
+  dwmblocks &
+  exec dwm
+  ;;
+esac
