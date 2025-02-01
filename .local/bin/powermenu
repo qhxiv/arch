@@ -2,10 +2,13 @@
 
 action=$(echo -e "Shutdown\nReboot\nLock" | dmenu -i)
 case $action in
-  "Shutdown")
-    shutdown now;;
-  "Reboot")
-    reboot;;
-  "Lock")
-    slock;;
+"Shutdown")
+  shutdown now
+  ;;
+"Reboot")
+  reboot
+  ;;
+"Lock")
+  i3lock
+  ;;
 esac

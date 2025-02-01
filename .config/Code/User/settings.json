@@ -12,8 +12,8 @@
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "JetBrainsMonoNL NF",
-  "editor.fontSize": 13.5,
+  "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontSize": 13,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -28,7 +28,7 @@
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
-  "extensions.ignoreRecommendations": true,
+  "extensions.ignoreRecommendations": false,
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
   "headwind.runOnSave": false,
@@ -37,6 +37,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "redhat.telemetry.enabled": false,
   "security.workspace.trust.untrustedFiles": "open",
+  "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
     "css": "css",
     "html": "html",
@@ -47,21 +48,20 @@
   "terminal.integrated.gpuAcceleration": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
+  "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
+  "workbench.startupEditor": "newUntitledFile",
 
   // Vim
   "vim.useSystemClipboard": true,
   "vim.hlsearch": true,
   "vim.leader": " ",
   "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.color": "rgba(144, 144, 144, 0.5)",
-
   "vim.sneak": true,
 
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -80,7 +80,7 @@
 
     // Panes
     {
-      "before": ["<C-h>"],
+      "before": ["C-h"],
       "commands": ["workbench.action.focusLeftGroup"]
     },
     {
@@ -103,13 +103,14 @@
     { "before": ["leader", "h"], "after": ["^"] },
     { "before": ["leader", "l"], "after": ["$"] },
 
-    // NICE TO HAVE
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
+    // LSP
     {
-      "before": ["leader", "t", "w"],
-      "commands": ["editor.action.toggleWordWrap"]
+      "before": ["leader", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["leader", "r", "n"],
+      "commands": ["editor.action.rename"]
     },
     {
       "before": ["[", "d"],
@@ -119,10 +120,8 @@
       "before": ["]", "d"],
       "commands": ["editor.action.marker.next"]
     },
-    {
-      "before": ["leader", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
+
+    // Telescope
     {
       "before": ["leader", "f", "f"],
       "commands": ["workbench.action.quickOpen"]
@@ -131,10 +130,53 @@
       "before": ["leader", "f", "g"],
       "commands": ["workbench.action.findInFiles"]
     },
+
+    // Harpoon
+    {
+      "before": ["m", "s"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["m", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["m", "l"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["m", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["m", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["m", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
+    },
+    {
+      "before": ["m", "4"],
+      "commands": ["vscode-harpoon.gotoEditor4"]
+    },
+    {
+      "before": ["m", "5"],
+      "commands": ["vscode-harpoon.gotoEditor5"]
+    },
+
+    // Misc
     {
       "before": ["leader", "f", "m"],
       "commands": ["editor.action.formatDocument"]
-    }
+    },
+    {
+      "before": ["leader", "t", "w"],
+      "commands": ["editor.action.toggleWordWrap"]
+    },
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
   ],
 
   "vim.visualModeKeyBindings": [
@@ -147,10 +189,7 @@
 
     // Move selected lines while staying in visual mode
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-
-    // Comment line
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] }
   ],
 
   // paste without overriding the current register
@@ -159,5 +198,6 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ]
+  ],
 }
+
