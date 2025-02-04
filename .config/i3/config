@@ -48,7 +48,6 @@ floating_modifier $mod
 tiling_drag modifier titlebar
 
 hide_edge_borders smart
-for_window [class="^.*"] border pixel 1
 
 focus_follows_mouse yes
 
@@ -151,6 +150,5 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-  position top
   status_command i3blocks
 }

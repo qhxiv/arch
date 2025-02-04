@@ -27,7 +27,6 @@ grub
 i3-wm
 i3blocks
 i3lock
-i3status
 ibus
 ibus-bamboo-git
 intel-ucode
@@ -40,7 +39,6 @@ linux
 linux-firmware
 lxappearance
 man-db
-maven
 neofetch
 neovim
 networkmanager
