@@ -46,8 +46,8 @@ noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g
 obs-studio
+obsidian
 openssh
-otf-firamono-nerd
 picom
 pinta
 pulseaudio
@@ -63,11 +63,11 @@ tlp
 tmux
 tree
 ttf-arimo-nerd
+ttf-jetbrains-mono-nerd
 unrar
 unzip
 visual-studio-code-bin
 vlc
-wezterm
 xclip
 xcolor
 xf86-input-libinput

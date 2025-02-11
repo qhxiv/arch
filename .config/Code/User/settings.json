@@ -13,6 +13,7 @@
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.fontFamily": "JetBrainsMonoNL NFP",
+  "editor.formatOnSave": true,
   "editor.fontSize": 13.5,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
@@ -29,9 +30,14 @@
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
   "extensions.ignoreRecommendations": false,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "javascript.suggest.paths": false,
+  "typescript.suggest.paths": false,
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
-  "headwind.runOnSave": false,
+  "headwind.runOnSave": true,
   "html.format.enable": false,
   "java.completion.matchCase": "off",
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -44,7 +50,7 @@
     "javascript": "javascript"
   },
   "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "terminal.integrated.fontSize": 13.5,
+  "terminal.integrated.fontSize": 13,
   "terminal.integrated.gpuAcceleration": "off",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "window.commandCenter": false,
@@ -52,6 +58,7 @@
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Kanagawa Dragon",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
@@ -176,7 +183,7 @@
     },
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] }
   ],
 
   "vim.visualModeKeyBindings": [
@@ -198,5 +205,5 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ],
+  ]
 }

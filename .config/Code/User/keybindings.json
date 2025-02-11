@@ -55,6 +55,23 @@
     "when": "codeActionMenuVisible"
   },
 
+  // Live grep
+  {
+    "key": "ctrl+n",
+    "command": "search.action.focusNextSearchResult",
+    "when": "sideBarFocus && hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "search.action.focusPreviousSearchResult",
+    "when": "sideBarFocus && hasSearchResult || inSearchEditor"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "search.action.openResult",
+    "when": "sideBarFocus && fileMatchOrMatchFocus && searchViewletVisible"
+  },
+
   // Side bar
   {
     "key": "ctrl+e",
@@ -169,4 +186,3 @@
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   }
 ]
-

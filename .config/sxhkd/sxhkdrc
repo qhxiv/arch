@@ -19,6 +19,7 @@ alt + Escape
 alt + i
   [[ $(ibus engine) = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo
 
+# Applications shortcut
 alt + c
   code
 
@@ -36,3 +37,6 @@ alt + shift + b
 
 alt + shift + w
   $TERMINAL -e nmtui
+
+alt + m
+  $TERMINAL --class cmus -e cmus

@@ -11,6 +11,7 @@ alias grep='grep --color=auto'
 alias ws='cd /mnt/d/Documents/Workspace'
 alias ms='cd /mnt/d/Music'
 alias nc='cd ~/.config/nvim/; nvim .'
+alias sc='cd "/mnt/d/Documents/School/Năm 4 Kì 2/"'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias glog='git log --graph --oneline --decorate'

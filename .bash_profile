@@ -1,6 +1,10 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # Environment variables
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export TERMINAL=alacritty
