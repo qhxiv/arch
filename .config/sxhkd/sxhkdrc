@@ -1,7 +1,7 @@
 # volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
   amixer set Master {5%+,5%-,toggle} > /dev/null; \
-  pkill -SIGRTMIN+2 i3blocks
+  pkill -RTMIN+2 dwmblocks
 
 # brightness
 XF86MonBrightness{Up,Down}
@@ -11,9 +11,10 @@ XF86MonBrightness{Up,Down}
 Print
  flameshot gui > /dev/null
 
-# restart sxhkd
+# restart sxhkd and dwmblocks
 alt + Escape
-  pkill sxhkd; sxhkd
+  pkill sxhkd; sxhkd; \
+  pkill dwmblocks; dwmblocks
 
 # change input method
 alt + i
@@ -22,6 +23,9 @@ alt + i
 # Applications shortcut
 alt + c
   code
+
+alt + d
+  dmenu_run
 
 alt + e
   thunar

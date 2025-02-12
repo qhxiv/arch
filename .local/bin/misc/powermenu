@@ -9,6 +9,6 @@ case $action in
   reboot
   ;;
 "Lock")
-  i3lock
+  slock
   ;;
 esac

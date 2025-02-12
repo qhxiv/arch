@@ -13,8 +13,6 @@ brightnessctl
 btop
 cmus
 discord
-docker
-docker-compose
 dunst
 efibootmgr
 fd
@@ -24,13 +22,9 @@ flameshot
 fzf
 git
 grub
-i3-wm
-i3blocks
-i3lock
 ibus
 ibus-bamboo-git
 intel-ucode
-iptables-nft
 keepassxc
 libx11
 libxft
@@ -56,6 +50,7 @@ pulseaudio-bluetooth
 ripgrep
 rnote
 selectdefaultapplication-git
+slock
 sof-firmware
 sxhkd
 thunar

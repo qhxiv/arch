@@ -82,8 +82,8 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // Splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
+    { "before": ["leader", "'"], "commands": [":vsplit"] },
+    { "before": ["leader", "-"], "commands": [":split"] },
 
     // Panes
     {
@@ -148,7 +148,7 @@
       "commands": ["vscode-harpoon.editEditors"]
     },
     {
-      "before": ["m", "l"],
+      "before": ["m", "p"],
       "commands": ["vscode-harpoon.editorQuickPick"]
     },
     {
