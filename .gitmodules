@@ -3,4 +3,4 @@
 	url = git@github.com:qhxiv/nvim-cfg.git
 [submodule "suckless"]
 	path = suckless
-	url = ./suckless/
+	url = git@github.com:qhxiv/suckless.git
