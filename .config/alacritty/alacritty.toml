@@ -9,3 +9,6 @@ size = 9.5
 
 [colors.normal]
 blue = "#0F52BA"
+
+[colors.primary]
+background = '#181616'

@@ -13,5 +13,5 @@ export TERMINAL=alacritty
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  exec startx
+  startx
 fi

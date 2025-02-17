@@ -22,6 +22,8 @@ flameshot
 fzf
 git
 grub
+i3-wm
+i3blocks
 ibus
 ibus-bamboo-git
 intel-ucode

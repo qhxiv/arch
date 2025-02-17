@@ -1,7 +1,8 @@
 # volume
 XF86Audio{RaiseVolume,LowerVolume,Mute}
   amixer set Master {5%+,5%-,toggle} > /dev/null; \
-  pkill -RTMIN+2 dwmblocks
+  pkill -SIGRTMIN+2 i3blocks; \
+  kill -36 $(pidof dwmblocks)
 
 # brightness
 XF86MonBrightness{Up,Down}
@@ -11,16 +12,19 @@ XF86MonBrightness{Up,Down}
 Print
  flameshot gui > /dev/null
 
-# restart sxhkd and dwmblocks
+# restart sxhkd
 alt + Escape
-  pkill sxhkd; sxhkd; \
-  pkill dwmblocks; dwmblocks
+  pkill -USR1 -x sxhkd
 
 # change input method
 alt + i
-  [[ $(ibus engine) = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo
+  [[ $(ibus engine) = "Bamboo" ]] && ibus engine xkb:us::eng || ibus engine Bamboo; \
+  kill -35 $(pidof dwmblocks)
 
 # Applications shortcut
+alt + return
+  alacritty
+
 alt + c
   code
 

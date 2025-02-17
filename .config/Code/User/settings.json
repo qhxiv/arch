@@ -29,7 +29,7 @@
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
-  "extensions.ignoreRecommendations": false,
+  "extensions.ignoreRecommendations": true,
   "files.associations": {
     "*.css": "tailwindcss"
   },
@@ -58,7 +58,6 @@
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Kanagawa Dragon",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",

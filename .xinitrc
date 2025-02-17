@@ -4,6 +4,6 @@ picom &
 sxhkd &
 ibus-daemon -rxRd &
 ~/.fehbg &
-dwmblocks &
 
-exec dwm
+dwmblocks &
+exec startdwm
