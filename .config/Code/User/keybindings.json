@@ -59,17 +59,12 @@
   {
     "key": "ctrl+n",
     "command": "search.action.focusNextSearchResult",
-    "when": "sideBarFocus && hasSearchResult || inSearchEditor"
+    "when": "searchViewletVisible && hasSearchResult || inSearchEditor"
   },
   {
     "key": "ctrl+p",
     "command": "search.action.focusPreviousSearchResult",
-    "when": "sideBarFocus && hasSearchResult || inSearchEditor"
-  },
-  {
-    "key": "ctrl+y",
-    "command": "search.action.openResult",
-    "when": "sideBarFocus && fileMatchOrMatchFocus && searchViewletVisible"
+    "when": "searchViewletVisible && hasSearchResult || inSearchEditor"
   },
 
   // Side bar

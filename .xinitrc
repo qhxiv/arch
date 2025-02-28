@@ -4,6 +4,7 @@ picom &
 sxhkd &
 ibus-daemon -rxRd &
 ~/.fehbg &
+unclutter &
 
-dwmblocks &
-exec startdwm
+# exec i3
+exec $HOME/.local/bin/dwm/startdwm

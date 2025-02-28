@@ -1,0 +1,8 @@
+#!/bin/sh
+
+rm -rf ~/suckless/dwm.bak
+rm -rf ~/suckless/dwm/*.orig
+rm -rf ~/suckless/dwm/*.rej
+rm -rf ~/suckless/dwm/config.h
+
+cp -r ~/suckless/dwm ~/suckless/dwm.bak

@@ -12,9 +12,11 @@ brave-bin
 brightnessctl
 btop
 cmus
+colordiff
 discord
 dunst
 efibootmgr
+etterna
 fd
 feh
 firefox
@@ -59,8 +61,8 @@ thunar
 tlp
 tmux
 tree
-ttf-arimo-nerd
-ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols
+unclutter
 unrar
 unzip
 visual-studio-code-bin
@@ -74,6 +76,6 @@ xorg-xinit
 xorg-xinput
 xorg-xrandr
 yay
-yay-debug
+yt-dlp
 zathura
 zathura-pdf-mupdf

@@ -29,6 +29,3 @@ eval "$(fzf --bash)"
 
 # Activate mise
 eval "$(mise activate bash)"
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)

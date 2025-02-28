@@ -12,9 +12,10 @@ XF86MonBrightness{Up,Down}
 Print
  flameshot gui > /dev/null
 
-# restart sxhkd
+# restart sxhkd & dwmblocks
 alt + Escape
-  pkill -USR1 -x sxhkd
+  pkill -USR1 -x sxhkd; \
+  pkill dwmblocks; dwmblocks &
 
 # change input method
 alt + i
@@ -22,7 +23,7 @@ alt + i
   kill -35 $(pidof dwmblocks)
 
 # Applications shortcut
-alt + return
+alt + Return
   alacritty
 
 alt + c
