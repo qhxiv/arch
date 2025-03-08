@@ -2,6 +2,7 @@ command=~/.local/bin/statusbar/$BLOCK_NAME
 interval=1
 
 [sb-volume]
+interval=0
 signal=2
 
 [sb-battery]
@@ -11,5 +12,6 @@ signal=2
 [sb-wifi]
 
 [sb-date]
+interval=86400
 
 [sb-time]

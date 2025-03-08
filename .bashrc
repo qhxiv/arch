@@ -29,3 +29,4 @@ eval "$(fzf --bash)"
 
 # Activate mise
 eval "$(mise activate bash)"
+

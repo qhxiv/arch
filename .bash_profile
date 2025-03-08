@@ -13,5 +13,10 @@ export TERMINAL=alacritty
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
 if [ -z "$DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
-  startx
+  printf "Select wm\n"
+  printf "1) dwm (default)\n"
+  printf "2) i3\n"
+  read -p "(Enter anything for the default) " choice
+
+  startx ~/.xinitrc $choice
 fi

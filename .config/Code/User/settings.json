@@ -12,6 +12,7 @@
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
+  "editor.fontFamily": "Source Code Pro",
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.lineNumbers": "relative",
@@ -30,8 +31,7 @@
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
-  "extensions.ignoreRecommendations": true,
-  // ONLY enable this setting when working with tailwindcss project
+  // ONLY ENABLE THIS SETTING WHEN WORKING WITH TailwindCSS project
   // "files.associations": { "*.css": "tailwindcss" },
   "javascript.suggest.paths": false,
   "typescript.suggest.paths": false,
@@ -58,7 +58,7 @@
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Mellow",
+  "workbench.colorTheme": "Kanagawa Dragon",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
@@ -69,20 +69,21 @@
   "vim.hlsearch": true,
   "vim.leader": " ",
   "vim.highlightedyank.enable": true,
+  "vim.sneak": true,
 
   "vim.normalModeKeyBindingsNonRecursive": [
     // Remap vim sneak to 'z' key
-    // { "before": ["z"], "after": ["s"] },
-    // { "before": ["Z"], "after": ["S"] },
-    // { "before": ["s"], "after": ["c", "l"] },
+    { "before": ["z"], "after": ["s"] },
+    { "before": ["Z"], "after": ["S"] },
+    { "before": ["s"], "after": ["c", "l"] },
 
     // Buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // Splits
-    { "before": ["leader", "'"], "commands": [":vsplit"] },
-    { "before": ["leader", "-"], "commands": [":split"] },
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
 
     // Panes
     {
@@ -204,5 +205,7 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ]
+  ],
+  "terminal.integrated.env.linux": {},
+  "console-ninja.featureSet": "Community"
 }

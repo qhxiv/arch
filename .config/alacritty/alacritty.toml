@@ -7,26 +7,10 @@ thickness = 0.3
 [font]
 size = 9.5
 
-# [colors.primary]
-# background = '#101010'
-#
-# [colors.normal]
-# blue = '#12488b'
-
-# LACKLUSTER COLORS
 [colors.primary]
-background = '#0A0A0A'
+background = '#181616'
 
 [colors.normal]
-# black is gray0
-black = '#080808'
-red = '#D70000'
-green = '#789978'
-yellow = '#ffAA88'
-# blue = '#7788AA'
+# blue = '#12488b'
 blue = '#54546D'
-magenta = '#D7007D'
-# cyan is set to lack
-cyan = '#708090' 
-# white is set to luster
-white = '#DEEEED'
+
