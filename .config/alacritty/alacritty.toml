@@ -2,15 +2,29 @@
 padding = { x = 4, y = 4 }
 
 [cursor]
-thickness = 0.3
+thickness = 0.2
 
 [font]
 size = 9.5
 
+# [colors.normal]
+# # blue = '#12488b'
+# blue = '#54546D'
+
+# LACKLUSTER COLORS
 [colors.primary]
-background = '#181616'
+background = '#0A0A0A'
 
 [colors.normal]
-# blue = '#12488b'
-blue = '#54546D'
-
+# black is gray0
+black = '#080808'
+red = '#D70000'
+green = '#789978'
+yellow = '#ffAA88'
+# blue = '#7788AA'
+blue = '#363646'
+magenta = '#D7007D'
+# cyan is set to lack
+cyan = '#708090' 
+# white is set to luster
+white = '#DEEEED'

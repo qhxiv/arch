@@ -2,10 +2,10 @@
 
 capacity=$(cat /sys/class/power_supply/BAT0/capacity)
 status=$(cat /sys/class/power_supply/BAT0/status)
-icon=󰂄
+suffix=+
 
 if [[ $status = "Discharging" ]]; then
-  icon=󰁹
+  suffix=-
 fi
 
-echo "$icon $capacity%"
+echo "BAT $capacity%$suffix"

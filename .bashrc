@@ -30,3 +30,7 @@ eval "$(fzf --bash)"
 # Activate mise
 eval "$(mise activate bash)"
 
+# Load pyenv-virtualenv automatically by adding
+# the following to ~/.bashrc:
+
+eval "$(pyenv virtualenv-init -)"

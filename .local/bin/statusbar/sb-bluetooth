@@ -1,18 +1,18 @@
 #!/bin/sh
 
 # Controller
-status=$(bluetoothctl show $uuid | awk '/PowerState/ { print $2 }')
+status=$(bluetoothctl show | awk '/PowerState/ { print $2 }')
 
 if [[ $status = off ]]; then
-  icon=󰂲
+  suffix=off
 else
   device=$(bluetoothctl devices Connected)
 
   if [[ $(echo $device | wc -w) = 0 ]]; then
-    icon=󰂯
+    suffix=on
   else
-    icon=󰂱
+    suffix=connected
   fi
 fi
 
-echo "$icon"
+echo "BT $suffix"

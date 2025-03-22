@@ -32,11 +32,11 @@ alt + c
 alt + d
   dmenu_run
 
+alt + shift + d
+  powermenu
+
 alt + e
   thunar
-
-alt + s
-  powermenu
 
 alt + w
   brave
@@ -46,6 +46,3 @@ alt + shift + b
 
 alt + shift + w
   $TERMINAL -e nmtui
-
-alt + m
-  $TERMINAL --class cmus -e cmus

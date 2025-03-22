@@ -2,10 +2,9 @@
 
 volume=$(amixer get Master | grep % | awk '{print $5}' | tail -n 1 | sed 's/[^0-9%]//g')
 status=$(amixer get Master | grep % | awk '{print $6}' | tail -n 1 | sed 's/[][]//g')
-icon=
 
 if [ $status = "off" ]; then
-  icon=
+  volume=muted
 fi
 
-echo "$icon $volume"
+echo "VOL $volume"
