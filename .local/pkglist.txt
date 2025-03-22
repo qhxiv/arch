@@ -14,8 +14,6 @@ btop
 cmus
 colordiff
 discord
-docker
-docker-compose
 dunst
 efibootmgr
 fd
@@ -55,14 +53,15 @@ pulseaudio-bluetooth
 ripgrep
 rnote
 selectdefaultapplication-git
-slock
 sof-firmware
 sxhkd
 thunar
 tlp
 tmux
 tree
-ttf-nerd-fonts-symbols
+ttf-roboto
+ttf-roboto-mono-nerd
+tumbler
 unclutter
 unrar
 unzip
