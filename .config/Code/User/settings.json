@@ -12,16 +12,13 @@
   "breadcrumbs.enabled": false,
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "RobotoMono Nerd Font",
   "editor.formatOnSave": true,
   "editor.guides.indentation": false,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
-  "editor.quickSuggestions": {
-    "strings": "on"
-  },
+  "editor.quickSuggestions": { "strings": "on" },
   "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
   "editor.stickyScroll.enabled": false,
@@ -31,16 +28,13 @@
     "typescript": "typescriptreact"
   },
   "explorer.compactFolders": false,
-  "explorer.sortOrder": "type",
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
+  "extensions.experimental.affinity": { "vscodevim.vim": 1 },
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
+  "glassit.alpha": 204,
   "headwind.runOnSave": true,
   "html.format.enable": false,
   "java.completion.matchCase": "off",
-  // ONLY ENABLE THIS SETTING WHEN WORKING WITH TailwindCSS project
   // "files.associations": { "*.css": "tailwindcss" },
   "javascript.suggest.paths": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -62,49 +56,34 @@
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
+    "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
+  },
+  "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.colorCustomizations": {
     "[Mellow]": {
-      "quickInput.background": "#101010",
-      "quickInput.foreground": "#888888",
-      "quickInputList.focusBackground": "#101010",
-      "quickInputList.focusForeground": "#ffffff",
-      "list.hoverBackground": "#0000",
-      "list.hoverForeground": "#aaaaaa",
-      "editor.background": "#101010",
+      "editor.background": "#0a0a0a",
       "editorGroupHeader.tabsBackground": "#0a0a0a",
-      "sideBar.border": "#0000",
+      "input.background": "#000",
       "sideBar.background": "#0a0a0a",
-      "sideBar.foreground": "#aaaaaa",
-      "sideBarSectionHeader.border": "#0000",
-      "sideBarSectionHeader.background": "#0a0a0a",
-      "sideBarSectionHeader.foreground": "#aaaaaa",
-      "statusBar.background": "#191919",
-      "statusBar.border": "#0000",
-      "statusBar.foreground": "#aaaaaa",
-      "statusBarItem.remoteBackground": "#191919",
-      "tab.hoverBackground": "#0000",
-      "tab.hoverForeground": "#fff",
-      "tab.activeBackground": "#0a0a0a",
+      "sideBarSectionHeader.background": "#0000",
+      "statusBar.background": "#0a0a0a",
+      "statusBarItem.remoteBackground": "#0a0a0a",
+      "tab.activeBackground": "#0000",
       "tab.activeBorder": "#0000",
-      "tab.activeBorderTop": "#aaa",
-      "tab.activeForeground": "#fff",
+      "tab.activeBorderTop": "#ffffff",
       "tab.border": "#0000",
-      "tab.inactiveBackground": "#0a0a0a",
-      "terminal.background": "#090909",
-      "panel.background": "#090909",
-      "panel.border": "#090909",
-      "panelTitle.activeForeground": "#fff",
-      "panelTitle.inactiveForeground": "#888",
-      "panelTitle.activeBorder": "#0000",
-      "titleBar.activeBackground": "#0a0a0a",
-      "titleBar.inactiveBackground": "#0a0a0a"
+      "tab.inactiveBackground": "#0000",
+      "titleBar.activeBackground": "#0a0a0a"
     }
   },
-  "workbench.colorTheme": "Mellow",
-  "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
+  "zenMode.fullScreen": false,
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false,
 
   // Vim
   "vim.useSystemClipboard": true,
@@ -251,5 +230,6 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ]
+  ],
+  "workbench.colorTheme": "Mellow"
 }

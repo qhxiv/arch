@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# mouse sensitivity
+sudo mkdir -p /etc/X11/xorg.conf.d
 sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d
-sudo mkdir /etc/systemd/system/getty@tty1.service.d
+
+# skip username when loging in with tty
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo cp skip-username.conf /etc/systemd/system/getty@tty1.service.d
+
+# disable beep sound in tty
+sudo mkdir -p /etc/modprobe.d
+sudo cp nobeep.conf /etc/modprobe.d
