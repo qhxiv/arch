@@ -16,6 +16,7 @@ alias sc='cd "/mnt/d/Documents/School/Năm 4 Kì 2/"'
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias glog='git log --graph --oneline --decorate'
 alias ytdl='yt-dlp -o "%(title)s.%(ext)s"'
+alias scdl='yt-dlp -o "%(title)s.%(ext)s" --extractor-args "soundcloud:formats=http_mp3"'
 alias lzd=lazydocker
 
 . ~/.local/bin/git/git-completion.bash

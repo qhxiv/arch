@@ -32,7 +32,6 @@
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
   "glassit.alpha": 204,
-  "headwind.runOnSave": true,
   "html.format.enable": false,
   "java.completion.matchCase": "off",
   // "files.associations": { "*.css": "tailwindcss" },
@@ -56,6 +55,7 @@
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Mellow",
   "workbench.editor.customLabels.patterns": {
     "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
     "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
@@ -251,6 +251,5 @@
       "before": ["p"],
       "after": ["p", "g", "v", "y"]
     }
-  ],
-  "workbench.colorTheme": "Mellow"
+  ]
 }
