@@ -28,11 +28,10 @@
     "typescript": "typescriptreact"
   },
   "explorer.compactFolders": false,
+  "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
-  "glassit.alpha": 204,
-  "headwind.runOnSave": true,
   "html.format.enable": false,
   "java.completion.matchCase": "off",
   // "files.associations": { "*.css": "tailwindcss" },
@@ -61,44 +60,6 @@
     "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
   },
   "workbench.editor.centeredLayoutFixedWidth": true,
-  "workbench.colorCustomizations": {
-    "[Mellow]": {
-      "editor.background": "#0a0a0a",
-      "editorGroupHeader.tabsBackground": "#0a0a0a",
-      "editorSuggestWidget.background": "#191919",
-      "editorSuggestWidget.border": "#0000",
-      "editorSuggestWidget.foreground": "#deeeed",
-      "editorSuggestWidget.highlightForeground": "#708090",
-      "editorSuggestWidget.selectedBackground": "#ccc",
-      "editorSuggestWidget.selectedForeground": "#000",
-      "editorWidget.background": "#000",
-      "input.background": "#000",
-      "list.activeSelectionBackground": "#191919",
-      "list.activeSelectionForeground": "#deeeed",
-      "list.highlightForeground": "#708090",
-      "list.hoverBackground": "#191919",
-      "quickInput.background": "#0a0a0a",
-      "quickInput.foreground": "#555",
-      "quickInputList.focusBackground": "#191919",
-      "quickInputList.focusForeground": "#deeeed",
-      "scrollbar.shadow": "#0000",
-      "sideBar.background": "#0a0a0a",
-      "sideBarSectionHeader.background": "#0000",
-      "statusBar.background": "#0a0a0a",
-      "statusBar.border": "#0000",
-      "statusBarItem.remoteBackground": "#0a0a0a",
-      "tab.activeBackground": "#0000",
-      "tab.activeBorder": "#0000",
-      "tab.activeBorderTop": "#deeeed",
-      "tab.border": "#0000",
-      "tab.inactiveBackground": "#0000",
-      "tab.unfocusedActiveBorder": "#0000",
-      "tab.unfocusedActiveBorderTop": "#7a7a7a",
-      "terminal.background": "#0a0a0a",
-      "titleBar.activeBackground": "#0a0a0a",
-      "titleBar.inactiveBackground": "#0a0a0a"
-    }
-  },
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
@@ -252,5 +213,5 @@
       "after": ["p", "g", "v", "y"]
     }
   ],
-  "workbench.colorTheme": "Mellow"
+  "workbench.colorTheme": "Default Light Modern"
 }

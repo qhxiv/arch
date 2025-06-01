@@ -15,8 +15,16 @@ alias sc='cd "/mnt/d/Documents/School/Năm 4 Kì 2/"'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
 alias glog='git log --graph --oneline --decorate'
-alias ytdl='yt-dlp -o "%(title)s.%(ext)s"'
 alias lzd=lazydocker
+
+# Youtube video download
+alias ytdl='yt-dlp -o "%(title)s.%(ext)s" -f mp4'
+
+# Youtube music download
+alias ytmsdl='yt-dlp -o "%(title)s.%(ext)s" -x --audio-format mp3'
+
+# Soundcloud download
+alias scdl='yt-dlp -o "%(title)s.%(ext)s" -f mp3'
 
 . ~/.local/bin/git/git-completion.bash
 . ~/.local/bin/git/git-prompt.sh
@@ -30,3 +38,11 @@ eval "$(fzf --bash)"
 
 # Activate mise
 eval "$(mise activate bash)"
+
+# pnpm
+export PNPM_HOME="/home/qh/.local/share/pnpm"
+case ":$PATH:" in
+*":$PNPM_HOME:"*) ;;
+*) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
