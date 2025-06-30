@@ -10,6 +10,10 @@
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "Vue.volar" },
   "breadcrumbs.enabled": false,
+  "cph.general.defaultLanguage": "cpp",
+  "cph.general.defaultLanguageTemplateFileLocation": "/mnt/d/Documents/Workspace/cp/temp.cpp",
+  "cph.language.cpp.Args": "-std=c++17",
+  "cph.language.cpp.SubmissionCompiler": "GNU G++17 7.3.0",
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
   "editor.formatOnSave": true,
@@ -30,11 +34,13 @@
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
+  "files.autoGuessEncoding": false,
+  // "files.associations": { "*.css": "tailwindcss" },
+  "files.eol": "\n",
   "git.openRepositoryInParentFolders": "never",
   "gitlens.launchpad.indicator.enabled": false,
   "html.format.enable": false,
   "java.completion.matchCase": "off",
-  // "files.associations": { "*.css": "tailwindcss" },
   "javascript.suggest.paths": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "redhat.telemetry.enabled": false,
@@ -50,22 +56,23 @@
   "terminal.integrated.gpuAcceleration": "off",
   "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
-  "workbench.editor.customLabels.patterns": {
-    "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
-    "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
-  },
   "workbench.editor.centeredLayoutFixedWidth": true,
+  "workbench.editor.customLabels.patterns": {
+    "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
+    "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
+  },
   "workbench.layoutControl.enabled": false,
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.fullScreen": false,
-  "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
+  "zenMode.hideStatusBar": false,
 
   // Vim
   "vim.useSystemClipboard": true,
@@ -89,8 +96,8 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // Splits
-    { "before": ["leader", "v"], "commands": [":vsplit"] },
-    { "before": ["leader", "s"], "commands": [":split"] },
+    { "before": ["leader", "'"], "commands": [":vsplit"] },
+    { "before": ["leader", "-"], "commands": [":split"] },
 
     // Panes
     {
@@ -145,39 +152,6 @@
       "commands": ["workbench.action.findInFiles"]
     },
 
-    // Harpoon
-    {
-      "before": ["m", "s"],
-      "commands": ["vscode-harpoon.addEditor"]
-    },
-    {
-      "before": ["m", "e"],
-      "commands": ["vscode-harpoon.editEditors"]
-    },
-    {
-      "before": ["m", "l"],
-      "commands": ["vscode-harpoon.editorQuickPick"]
-    },
-    {
-      "before": ["m", "1"],
-      "commands": ["vscode-harpoon.gotoEditor1"]
-    },
-    {
-      "before": ["m", "2"],
-      "commands": ["vscode-harpoon.gotoEditor2"]
-    },
-    {
-      "before": ["m", "3"],
-      "commands": ["vscode-harpoon.gotoEditor3"]
-    },
-    {
-      "before": ["m", "4"],
-      "commands": ["vscode-harpoon.gotoEditor4"]
-    },
-    {
-      "before": ["m", "5"],
-      "commands": ["vscode-harpoon.gotoEditor5"]
-    },
 
     // Misc
     {
@@ -213,5 +187,4 @@
       "after": ["p", "g", "v", "y"]
     }
   ],
-  "workbench.colorTheme": "Default Light Modern"
 }

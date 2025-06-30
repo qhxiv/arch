@@ -1,6 +1,6 @@
 #!/bin/sh
 
-action=$(echo -e "Shutdown\nReboot\nLock" | dmenu -i)
+action=$(echo -e "Shutdown\nReboot\nLock" | spawn_dmenu -i)
 case $action in
 "Shutdown")
   shutdown now

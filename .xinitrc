@@ -2,9 +2,10 @@
 
 picom &
 sxhkd &
+xfsettingsd &
 ibus-daemon -rxRd &
+unclutter &
 ~/.fehbg &
-# unclutter &
 
 case "$1" in
 2)

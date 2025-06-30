@@ -30,7 +30,7 @@ alt + c
   code
 
 alt + d
-  dmenu_run
+  spawn_dmenu_run
 
 alt + shift + d
   powermenu

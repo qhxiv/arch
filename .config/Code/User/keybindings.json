@@ -109,7 +109,7 @@
     "when": "terminalFocus"
   },
 
-  // FILE TREE
+  // File tree
   {
     "key": "ctrl+e",
     "command": "workbench.files.action.focusFilesExplorer",
@@ -180,18 +180,4 @@
     "command": "copyRelativeFilePath",
     "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
   },
-  
-  // Competitive programming stuffs
-  {
-    "key": "f9",
-    "command": "workbench.action.tasks.runTask",
-    "args": "Compile and run C++",
-    "when": "editorLangId == cpp"
-  },
-  {
-    "key": "f11",
-    "command": "workbench.action.tasks.runTask",
-    "args": "Reset file C++",
-    "when": "editorLangId == cpp"
-  }
 ]

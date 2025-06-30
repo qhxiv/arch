@@ -11,3 +11,8 @@ sudo cp skip-username.conf /etc/systemd/system/getty@tty1.service.d
 # disable beep sound in tty
 sudo mkdir -p /etc/modprobe.d
 sudo cp nobeep.conf /etc/modprobe.d
+
+# darkman config
+sudo cp -r ~/.local/bin/darkman/* /usr/local/share/
+
+# turn off bluetooth on start

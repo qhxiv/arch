@@ -1,3 +1,6 @@
+[general]
+import = [ "./light.toml" ]
+
 [window]
 padding = { x = 4, y = 4 }
 
@@ -5,8 +8,4 @@ padding = { x = 4, y = 4 }
 thickness = 0.2
 
 [font]
-size = 9.75
-
-[colors.normal]
-blue = '#54546D'
-
+size = 10.5

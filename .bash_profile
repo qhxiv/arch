@@ -9,6 +9,8 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export TERMINAL=alacritty
 
+export XDG_DATA_DIRS=/usr/local/share/:/usr/share/
+
 # Add all directories in `~/.local/bin` to $PATH
 export PATH="$PATH:$(find ~/.local/bin -type d | paste -sd ':' -)"
 
