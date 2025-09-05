@@ -1,6 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
-	url = git@github.com:qhxiv/nvim-cfg.git
+	url = git@github.com:qhxiv/nvim.git
 [submodule "suckless"]
 	path = suckless
 	url = git@github.com:qhxiv/suckless.git
