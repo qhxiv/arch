@@ -1,0 +1,2 @@
+#!/bin/sh
+flameshot gui -r -s | xclip -selection clipboard -t image/png

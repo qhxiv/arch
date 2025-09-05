@@ -10,20 +10,24 @@
   "[typescriptreact]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "[vue]": { "editor.defaultFormatter": "Vue.volar" },
   "breadcrumbs.enabled": false,
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "C_Cpp.default.cppStandard": "c++17",
   "cph.general.defaultLanguage": "cpp",
+  // "cph.general.defaultLanguageTemplateFileLocation": "D:/Documents/Workspace/cp/temp.cpp",
   "cph.general.defaultLanguageTemplateFileLocation": "/mnt/d/Documents/Workspace/cp/temp.cpp",
-  "cph.language.cpp.Args": "-std=c++17",
+  "cph.language.cpp.Args": "-std=c++17 -Wshadow -Wall -O2 -Wno-unused-result",
   "cph.language.cpp.SubmissionCompiler": "GNU G++17 7.3.0",
+  "cph.language.java.SubmissionCompiler": "Java 8 32bit",
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
+  "editor.fontLigatures": false,
   "editor.guides.indentation": false,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
   "editor.occurrencesHighlight": "off",
   "editor.quickSuggestions": { "strings": "on" },
-  "editor.renderLineHighlight": "none",
   "editor.scrollBeyondLastLine": false,
   "editor.stickyScroll.enabled": false,
   "editor.tabSize": 2,
@@ -34,6 +38,7 @@
   "explorer.compactFolders": false,
   "explorer.sortOrder": "type",
   "extensions.experimental.affinity": { "vscodevim.vim": 1 },
+  "extensions.ignoreRecommendations": true,
   "files.autoGuessEncoding": false,
   // "files.associations": { "*.css": "tailwindcss" },
   "files.eol": "\n",
@@ -45,6 +50,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "redhat.telemetry.enabled": false,
   "search.smartCase": true,
+  "security.allowedUNCHosts": ["wsl.localhost"],
   "security.workspace.trust.untrustedFiles": "open",
   "tailwindCSS.emmetCompletions": true,
   "tailwindCSS.includeLanguages": {
@@ -65,9 +71,12 @@
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
-    "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}"
+    "**/app/**/page.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
+    "**/index.tsx": "${dirname(1)}/${dirname}/${filename}.${extname}",
+    "**/index.ts": "${dirname(1)}/${dirname}/${filename}.${extname}"
   },
   "workbench.layoutControl.enabled": false,
+  "workbench.secondarySideBar.defaultVisibility": "visible",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
   "zenMode.fullScreen": false,
@@ -120,7 +129,7 @@
     // Turn off search highlighting
     { "before": ["<Esc>"], "commands": [":nohl"] },
 
-    // Move cursor to the first and last character in the line
+    // Move to the first and last non whitespace character in line
     { "before": ["leader", "h"], "after": ["^"] },
     { "before": ["leader", "l"], "after": ["$"] },
 
@@ -152,7 +161,6 @@
       "commands": ["workbench.action.findInFiles"]
     },
 
-
     // Misc
     {
       "before": ["leader", "f", "m"],
@@ -168,6 +176,7 @@
   ],
 
   "vim.visualModeKeyBindings": [
+    // Move to the first and last non whitespace character in line
     { "before": ["leader", "h"], "after": ["^"] },
     { "before": ["leader", "l"], "after": ["$"] },
 
@@ -187,4 +196,13 @@
       "after": ["p", "g", "v", "y"]
     }
   ],
+  "chat.instructionsFilesLocations": {
+    ".github/instructions": true,
+    "/tmp/postman-collections-post-response.instructions.md": true,
+    "/tmp/postman-collections-pre-request.instructions.md": true,
+    "/tmp/postman-folder-post-response.instructions.md": true,
+    "/tmp/postman-folder-pre-request.instructions.md": true,
+    "/tmp/postman-http-request-post-response.instructions.md": true,
+    "/tmp/postman-http-request-pre-request.instructions.md": true
+  },
 }

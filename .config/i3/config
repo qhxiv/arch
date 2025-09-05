@@ -149,8 +149,8 @@ bar {
   status_command i3blocks
 }
 
-assign [class="cmus"] 8
-workspace_layout tabbed
+# assign [class="cmus"] 8
+# workspace_layout tabbed
 
 for_window [class="^.*"] border pixel 2
 

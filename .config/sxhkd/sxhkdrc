@@ -10,7 +10,7 @@ XF86MonBrightness{Up,Down}
 
 # screenshot
 Print
- ~/.local/bin/scrot/printscreen
+ ~/.local/bin/flameshot/screenshot
 
 # restart sxhkd & dwmblocks
 alt + Escape

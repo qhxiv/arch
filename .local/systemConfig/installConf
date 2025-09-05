@@ -12,7 +12,12 @@ sudo cp skip-username.conf /etc/systemd/system/getty@tty1.service.d
 sudo mkdir -p /etc/modprobe.d
 sudo cp nobeep.conf /etc/modprobe.d
 
-# darkman config
-sudo cp -r ~/.local/bin/darkman/* /usr/local/share/
-
 # turn off bluetooth on start
+sudo sed -i "s/#AutoEnable=true/AutoEnable=false/" /etc/bluetooth/main.conf
+
+# Some pacman settings
+sudo sed -i "s/#Color/Color/" /etc/pacman.conf
+sudo sed -i "s/#VerbosePkgLists/VerbosePkgLists/" /etc/pacman.conf
+
+# unbind ctrl + alt + l in xfce settings
+xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -r

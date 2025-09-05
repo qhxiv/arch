@@ -2,24 +2,10 @@
 
 if [[ -e ~/.lightmode ]]; then
   xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
-  sed -i "s/light/dark/" "$HOME/.config/alacritty/alacritty.toml"
-  feh --bg-fill "/mnt/d/Pictures/wallpapers/mojave-night.png"
   rm -rf ~/.lightmode
-  cmus-remote -C "colorscheme night"
-
-  for server in $(nvr --serverlist); do
-    nvr --servername "$server" -cc 'set background=dark'
-  done
 else
   xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita"
-  sed -i "s/dark/light/" "$HOME/.config/alacritty/alacritty.toml"
-  feh --bg-fill "/mnt/d/Pictures/wallpapers/mojave.png"
   touch ~/.lightmode
-  cmus-remote -C "colorscheme xterm-white"
-
-  for server in $(nvr --serverlist); do
-    nvr --servername "$server" -cc 'set background=light'
-  done
 fi
 
 pkill -HUP -x dwm &
