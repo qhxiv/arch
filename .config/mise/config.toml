@@ -1,4 +1,8 @@
 [tools]
+java = "21"
+lazydocker = "latest"
 node = "lts"
+python = "latest"
 shfmt = "latest"
 stylua = "latest"
+yarn = "latest"

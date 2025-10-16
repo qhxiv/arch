@@ -1,0 +1,12 @@
+#!/bin/sh
+
+volume=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master) | sed 's/%//')
+status=$(amixer get Master | grep % | awk '{print $6}' | tail -n 1 | sed 's/[][]//g')
+
+if [ $status = "off" ]; then
+  value=muted
+else
+  value="$volume%"
+fi
+
+dunstify -h string:x-dunst-stack-tag:volume -h int:value:$volume "VOLUME $value"

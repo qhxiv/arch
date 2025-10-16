@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# mouse sensitivity
-sudo mkdir -p /etc/X11/xorg.conf.d
-sudo cp 50-mouse-acceleration.conf /etc/X11/xorg.conf.d
-
 # skip username when loging in with tty
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo cp skip-username.conf /etc/systemd/system/getty@tty1.service.d
@@ -15,9 +11,19 @@ sudo cp nobeep.conf /etc/modprobe.d
 # turn off bluetooth on start
 sudo sed -i "s/#AutoEnable=true/AutoEnable=false/" /etc/bluetooth/main.conf
 
-# Some pacman settings
+# pacman settings
 sudo sed -i "s/#Color/Color/" /etc/pacman.conf
 sudo sed -i "s/#VerbosePkgLists/VerbosePkgLists/" /etc/pacman.conf
+
+# grub settings
+read -p $'You need to mount the Windows bootloader for setting up dual boot\nHave you done that yet? [y/n]: ' ans
+if [[ "$ans" == "y" ]]; then
+  sudo sed -i "s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=30/" /etc/default/grub
+  sudo sed -i "s/#GRUB_DISABLE_OS_PROBER=false/GRUB_DISABLE_OS_PROBER=false/" /etc/default/grub
+  yes | sudo pacman -S --needed os-prober
+  sudo grub-mkconfig -o /boot/grub/grub.cfg
+  yes | sudo pacman -Rns os-prober
+fi
 
 # unbind ctrl + alt + l in xfce settings
 xfconf-query -c xfce4-keyboard-shortcuts -p "/commands/custom/<Primary><Alt>l" -r

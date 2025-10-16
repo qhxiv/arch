@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [[ -e ~/.lightmode ]]; then
+if [[ -e $HOME/.lightmode ]]; then
   xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita-dark"
-  rm -rf ~/.lightmode
+  rm -rf $HOME/.lightmode
 else
   xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita"
-  touch ~/.lightmode
+  touch $HOME/.lightmode
 fi
 
 pkill -HUP -x dwm &

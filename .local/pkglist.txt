@@ -18,6 +18,7 @@ discord
 docker
 docker-buildx
 docker-compose
+dunst
 efibootmgr
 fd
 feh
@@ -31,10 +32,10 @@ i3-wm
 i3blocks
 ibus
 ibus-bamboo
-imlib2
 intel-ucode
 keepassxc
-lazydocker
+libxft
+libxinerama
 linux
 linux-firmware
 lxappearance
@@ -47,14 +48,11 @@ noto-fonts-cjk
 noto-fonts-emoji
 ntfs-3g
 obs-studio
-onboard
-openoffice-bin
 openssh
 picom
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-redshift
 ripgrep
 rnote
 selectdefaultapplication-git
@@ -74,8 +72,10 @@ unzip
 visual-studio-code-bin
 xclip
 xcolor
+xf86-video-intel
 xfce4-settings
 xorg-server
+xorg-xev
 xorg-xinit
 xorg-xrandr
 yay
@@ -83,4 +83,3 @@ yay-debug
 yt-dlp
 zathura
 zathura-pdf-mupdf
-zenity

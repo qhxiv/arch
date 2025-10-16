@@ -1,5 +1,6 @@
 #!/bin/sh
 
+dunst &
 picom &
 sxhkd &
 xfsettingsd &

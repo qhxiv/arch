@@ -20,9 +20,8 @@
   "cph.language.java.SubmissionCompiler": "Java 8 32bit",
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  // "editor.formatOnSave": true,
-  "editor.fontLigatures": false,
-  "editor.guides.indentation": false,
+  "editor.fontFamily": "AdwaitaMono Nerd Font",
+  // "editor.guides.indentation": false,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -205,4 +204,5 @@
     "/tmp/postman-http-request-post-response.instructions.md": true,
     "/tmp/postman-http-request-pre-request.instructions.md": true
   },
+  "remote.autoForwardPortsSource": "hybrid"
 }

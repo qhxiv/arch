@@ -1,0 +1,5 @@
+#!/bin/sh
+
+brightness=$(awk -F"[()]" '/Current/ {print $2}' <(brightnessctl) | sed 's/%//')
+
+dunstify -h string:x-dunst-stack-tag:brightness -h int:value:$brightness "BRIGHTNESS $brightness%"
