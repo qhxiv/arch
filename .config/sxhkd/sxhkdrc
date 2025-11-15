@@ -32,7 +32,7 @@ alt + c
   code
 
 alt + d
-  spawn_dmenu_run
+  dmenu_run
 
 alt + shift + d
   powermenu
@@ -41,7 +41,7 @@ alt + e
   thunar
 
 alt + w
-  firefox
+  brave
 
 alt + shift + b
   $TERMINAL -e bluetui

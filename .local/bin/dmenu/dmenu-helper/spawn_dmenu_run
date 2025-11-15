@@ -1,7 +1,0 @@
-#!/bin/sh
-
-if [[ -e ~/.lightmode ]]; then
-  dmenu_run -i -nb "#bbbbbb" -nf "#222222" -sb "#005577" -sf "#eeeeee" "$@"
-else
-  dmenu_run -i -nb "#222222" -nf "#bbbbbb" -sb "#005577" -sf "#eeeeee" "$@"
-fi

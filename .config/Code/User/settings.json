@@ -20,8 +20,10 @@
   "cph.language.java.SubmissionCompiler": "Java 8 32bit",
   "editor.bracketPairColorization.enabled": false,
   "editor.cursorBlinking": "solid",
-  "editor.fontFamily": "AdwaitaMono Nerd Font",
-  // "editor.guides.indentation": false,
+  "editor.fontFamily": "FiraMono Nerd Font",
+  "editor.fontSize": 13.5,
+  "editor.fontWeight": 500,
+  "editor.guides.indentation": false,
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
@@ -61,12 +63,12 @@
   "terminal.integrated.gpuAcceleration": "off",
   "typescript.suggest.paths": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.autoDetectColorScheme": true,
   "window.commandCenter": false,
   "window.customTitleBarVisibility": "auto",
   "window.menuBarVisibility": "hidden",
   "window.title": "${rootName}",
   "workbench.activityBar.location": "top",
+  "workbench.colorTheme": "Gruvbox Material Dark",
   "workbench.editor.centeredLayoutFixedWidth": true,
   "workbench.editor.customLabels.patterns": {
     "**/app/**/layout.tsx": "${dirname(1)} / ${dirname} / ${filename}.${extname}",
@@ -204,5 +206,4 @@
     "/tmp/postman-http-request-post-response.instructions.md": true,
     "/tmp/postman-http-request-pre-request.instructions.md": true
   },
-  "remote.autoForwardPortsSource": "hybrid"
 }

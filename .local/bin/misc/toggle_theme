@@ -7,5 +7,3 @@ else
   xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita"
   touch $HOME/.lightmode
 fi
-
-pkill -HUP -x dwm &
