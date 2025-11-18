@@ -8,12 +8,12 @@ if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
 
-. ~/.local/bin/git/git-completion.bash
-. ~/.local/bin/git/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_PS1_SHOWSTASHSTATE=1
-PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'
-PS1='\[\e[96;1m\]\w\[\e[93m\]${PS1_CMD1}\[\e[0m\] '
+# . ~/.local/bin/git/git-completion.bash
+# . ~/.local/bin/git/git-prompt.sh
+# export GIT_PS1_SHOWDIRTYSTATE=1
+# export GIT_PS1_SHOWSTASHSTATE=1
+# PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'
+# PS1='\[\e[96;1m\]\w\[\e[93m\]${PS1_CMD1}\[\e[0m\] '
 
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --bash)"
@@ -28,3 +28,5 @@ case ":$PATH:" in
 *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+eval "$(starship init bash)"
